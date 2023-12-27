@@ -66,7 +66,7 @@ static void MX_USART1_UART_Init(void);
 CAN_TxHeaderTypeDef TxHeader;
 CAN_RxHeaderTypeDef RxHeader;
 
-uint8_t TxData[8];
+//uint8_t TxData[8];
 uint8_t RxData[8];
 
 uint8_t TxMailbox;
@@ -113,7 +113,7 @@ int main(void)
   //Activate Notification when CAN_IT_RXFIFO0_MSG_PENDING interrupt is triggered.
   HAL_CAN_ActivateNotification(&hcan,CAN_IT_RX_FIFO0_MSG_PENDING);
 
-  //A Callback function is called when interrupt(CAN_IT_RX_FIFO0_MSG_PENDING) is triggered: defined on line 341
+  //A Callback function is called when interrupt CAN_IT_RX_FIFO0_MSG_PENDING is triggered: defined on line 341
 
 
   // TxData[0] = 0x64;
@@ -337,16 +337,57 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
+uint8_t wire_connected,battery_charging, battery_low, battery_ready, discharge_MOS;
 
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
   sprintf(msg, "Callback called Received");
   HAL_UART_Transmit(&huart1, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY); 
 
-  //Retrieve pending message from FIFO0
+  //Retrieve pending message from CAN_RXFIFO0 and store the data into RxData buffer, and frame info into RxHeader
   HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &RxHeader, RxData);
 
-  sprintf(msg, "RxData[0] = %x RxData[1] = %x", RxData[0], RxData[1], RxData[2], RxData[3], RxData[4], RxData[5], RxData[6], RxData[7]);
+  //Decode Byte 1
+
+
+  //Set the flags
+  wire_connected = (RxData[0] & 0x01) ? 1 : 0;// mask all the bits except bit 1
+  battery_charging = (RxData[0] & 0x02)?  1 : 0 ; // mask all the bits except bit 2
+  battery_low = (RxData[0] & 0x04) ? 1 : 0;
+  battery_ready = (RxData[0] & 0x08)? 1 : 0;
+
+  sprintf(msg, "Wire Connected: %d\nBattery Charging: %d\nBattery Low: %s\nBattery Ready: %s\n", wire_connected, battery_charging,battery_low,battery_ready);
   HAL_UART_Transmit(&huart1, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+
+  //Decode Byte 2
+  sprintf(msg, "SOC: %d", RxData[1]);
+  HAL_UART_Transmit(&huart1, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+
+  //Decode Byte 3 and 4, battery current level
+  float battery_current = (((RxData[3] << 8) | RxData[2]) - 5000 )/ 0.1;
+  sprintf(msg, "Battery Current: %f", battery_current);
+  HAL_UART_Transmit(&huart1, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+
+  //Decode Byte 5 and 6, battery voltage level
+  float battery_voltage = ((RxData[5] << 8) | RxData[4]) / 1000;
+  sprintf(msg, "Battery Voltage: %f", battery_voltage);
+
+  //Decode Byte 7
+  uint8_t battery_failure = RxData[6];
+  
+  switch (battery_failure) {
+  case 0x00:
+    sprintf(msg, "Battery Failure: %s", "No Failure");
+    break;
+  case 0x01:
+    sprintf(msg, "Battery Failure: %s", "Level 1(Stop Now)");
+    break;
+  case 0x02:
+    sprintf(msg, "Battery Failure: %s", "Level 2(Power Reduce to 50)");
+    break;
+  case 0x03:
+    sprintf(msg, "Battery Failure: %s", "Level 3(Alarm)");
+    break;
+  }
 
 }
 
