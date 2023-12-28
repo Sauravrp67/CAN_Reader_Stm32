@@ -1,0 +1,325 @@
+ARM GAS  C:\Users\SAURAV~1\AppData\Local\Temp\ccIOdAPg.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.arch armv7-m
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.file	"decode_logic.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.global	__aeabi_i2d
+  18              		.global	__aeabi_ddiv
+  19              		.global	__aeabi_d2f
+  20              		.global	__aeabi_i2f
+  21              		.section	.rodata.decodeMessage.str1.4,"aMS",%progbits,1
+  22              		.align	2
+  23              	.LC0:
+  24 0000 4E6F2046 		.ascii	"No Failure\000"
+  24      61696C75 
+  24      726500
+  25 000b 00       		.align	2
+  26              	.LC1:
+  27 000c 4C657665 		.ascii	"Level 1(Stop Now)\000"
+  27      6C203128 
+  27      53746F70 
+  27      204E6F77 
+  27      2900
+  28 001e 0000     		.align	2
+  29              	.LC2:
+  30 0020 4C657665 		.ascii	"Level 2(Power Reduce to 50)\000"
+  30      6C203228 
+  30      506F7765 
+  30      72205265 
+  30      64756365 
+  31              		.align	2
+  32              	.LC3:
+  33 003c 4C657665 		.ascii	"Level 3(Alarm)\000"
+  33      6C203328 
+  33      416C6172 
+  33      6D2900
+  34 004b 00       		.align	2
+  35              	.LC4:
+  36 004c 556E6B6E 		.ascii	"Unknown\000"
+  36      6F776E00 
+  37              		.section	.text.decodeMessage,"ax",%progbits
+  38              		.align	1
+  39              		.global	decodeMessage
+  40              		.syntax unified
+  41              		.thumb
+  42              		.thumb_func
+  44              	decodeMessage:
+ARM GAS  C:\Users\SAURAV~1\AppData\Local\Temp\ccIOdAPg.s 			page 2
+
+
+  45              	.LVL0:
+  46              	.LFB65:
+  47              		.file 1 "Core/Src/decode_logic.c"
+   1:Core/Src/decode_logic.c **** #include "decode_logic.h"
+   2:Core/Src/decode_logic.c **** #include "main.h"
+   3:Core/Src/decode_logic.c **** 
+   4:Core/Src/decode_logic.c **** void decodeMessage(const uint8_t *rxData, DecodedMessage *decodedMessage) {
+  48              		.loc 1 4 75 view -0
+  49              		.cfi_startproc
+  50              		@ args = 0, pretend = 0, frame = 0
+  51              		@ frame_needed = 0, uses_anonymous_args = 0
+  52              		.loc 1 4 75 is_stmt 0 view .LVU1
+  53 0000 38B5     		push	{r3, r4, r5, lr}
+  54              	.LCFI0:
+  55              		.cfi_def_cfa_offset 16
+  56              		.cfi_offset 3, -16
+  57              		.cfi_offset 4, -12
+  58              		.cfi_offset 5, -8
+  59              		.cfi_offset 14, -4
+  60 0002 0446     		mov	r4, r0
+  61 0004 0D46     		mov	r5, r1
+   5:Core/Src/decode_logic.c **** 
+   6:Core/Src/decode_logic.c ****     //Set the flags to use them in while loop
+   7:Core/Src/decode_logic.c **** 
+   8:Core/Src/decode_logic.c ****     //Decode the first Byte
+   9:Core/Src/decode_logic.c ****     decodedMessage->wire_connected = (rxData[0] & 0x01) ? 1 : 0; // 0x01 = 0000 0001
+  62              		.loc 1 9 5 is_stmt 1 view .LVU2
+  63              		.loc 1 9 45 is_stmt 0 view .LVU3
+  64 0006 0378     		ldrb	r3, [r0]	@ zero_extendqisi2
+  65              		.loc 1 9 61 view .LVU4
+  66 0008 03F00103 		and	r3, r3, #1
+  67              		.loc 1 9 36 view .LVU5
+  68 000c 0B60     		str	r3, [r1]
+  10:Core/Src/decode_logic.c ****     decodedMessage->battery_charging = (rxData[0] & 0x02) ? 1 : 0; // 0x02 = 0000 0010
+  69              		.loc 1 10 5 is_stmt 1 view .LVU6
+  70              		.loc 1 10 47 is_stmt 0 view .LVU7
+  71 000e 0378     		ldrb	r3, [r0]	@ zero_extendqisi2
+  72              		.loc 1 10 63 view .LVU8
+  73 0010 C3F34003 		ubfx	r3, r3, #1, #1
+  74              		.loc 1 10 38 view .LVU9
+  75 0014 4B60     		str	r3, [r1, #4]
+  11:Core/Src/decode_logic.c ****     decodedMessage->battery_low = (rxData[0] & 0x04) ? 1 : 0; // 0x04 = 0000 0100
+  76              		.loc 1 11 5 is_stmt 1 view .LVU10
+  77              		.loc 1 11 42 is_stmt 0 view .LVU11
+  78 0016 0378     		ldrb	r3, [r0]	@ zero_extendqisi2
+  79              		.loc 1 11 58 view .LVU12
+  80 0018 C3F38003 		ubfx	r3, r3, #2, #1
+  81              		.loc 1 11 33 view .LVU13
+  82 001c 8B60     		str	r3, [r1, #8]
+  12:Core/Src/decode_logic.c ****     decodedMessage->battery_ready = (rxData[0] & 0x08) ? 1 : 0; // 0x08 = 0000 1000
+  83              		.loc 1 12 5 is_stmt 1 view .LVU14
+  84              		.loc 1 12 44 is_stmt 0 view .LVU15
+  85 001e 0378     		ldrb	r3, [r0]	@ zero_extendqisi2
+  86              		.loc 1 12 60 view .LVU16
+  87 0020 C3F3C003 		ubfx	r3, r3, #3, #1
+  88              		.loc 1 12 35 view .LVU17
+  89 0024 CB60     		str	r3, [r1, #12]
+ARM GAS  C:\Users\SAURAV~1\AppData\Local\Temp\ccIOdAPg.s 			page 3
+
+
+  13:Core/Src/decode_logic.c ****     
+  14:Core/Src/decode_logic.c ****     //Store 2nd byte on SOC variable
+  15:Core/Src/decode_logic.c ****     decodedMessage->soc = rxData[1];
+  90              		.loc 1 15 5 is_stmt 1 view .LVU18
+  91              		.loc 1 15 33 is_stmt 0 view .LVU19
+  92 0026 4378     		ldrb	r3, [r0, #1]	@ zero_extendqisi2
+  93              		.loc 1 15 25 view .LVU20
+  94 0028 0B61     		str	r3, [r1, #16]
+  16:Core/Src/decode_logic.c ****     //Decode the 3rd and 4th byte, and 5th and 6th byte to get the current and voltage
+  17:Core/Src/decode_logic.c ****     decodedMessage->battery_current = (((rxData[3] << 8) | rxData[2]) - 5000) / 0.1;
+  95              		.loc 1 17 5 is_stmt 1 view .LVU21
+  96              		.loc 1 17 48 is_stmt 0 view .LVU22
+  97 002a C378     		ldrb	r3, [r0, #3]	@ zero_extendqisi2
+  98              		.loc 1 17 66 view .LVU23
+  99 002c 8078     		ldrb	r0, [r0, #2]	@ zero_extendqisi2
+ 100              	.LVL1:
+ 101              		.loc 1 17 58 view .LVU24
+ 102 002e 40EA0320 		orr	r0, r0, r3, lsl #8
+ 103              		.loc 1 17 79 view .LVU25
+ 104 0032 A0F59C50 		sub	r0, r0, #4992
+ 105 0036 0838     		subs	r0, r0, #8
+ 106 0038 FFF7FEFF 		bl	__aeabi_i2d
+ 107              	.LVL2:
+ 108              		.loc 1 17 79 view .LVU26
+ 109 003c 14A3     		adr	r3, .L10
+ 110 003e D3E90023 		ldrd	r2, [r3]
+ 111 0042 FFF7FEFF 		bl	__aeabi_ddiv
+ 112              	.LVL3:
+ 113 0046 FFF7FEFF 		bl	__aeabi_d2f
+ 114              	.LVL4:
+ 115              		.loc 1 17 37 view .LVU27
+ 116 004a 6861     		str	r0, [r5, #20]	@ float
+  18:Core/Src/decode_logic.c ****     decodedMessage->battery_voltage = ((rxData[5] << 8) | rxData[4]) / 1000;
+ 117              		.loc 1 18 5 is_stmt 1 view .LVU28
+ 118              		.loc 1 18 47 is_stmt 0 view .LVU29
+ 119 004c 6379     		ldrb	r3, [r4, #5]	@ zero_extendqisi2
+ 120              		.loc 1 18 65 view .LVU30
+ 121 004e 2079     		ldrb	r0, [r4, #4]	@ zero_extendqisi2
+ 122              		.loc 1 18 57 view .LVU31
+ 123 0050 40EA0320 		orr	r0, r0, r3, lsl #8
+ 124              		.loc 1 18 70 view .LVU32
+ 125 0054 104B     		ldr	r3, .L10+8
+ 126 0056 83FB0030 		smull	r3, r0, r3, r0
+ 127              		.loc 1 18 37 view .LVU33
+ 128 005a 8011     		asrs	r0, r0, #6
+ 129 005c FFF7FEFF 		bl	__aeabi_i2f
+ 130              	.LVL5:
+ 131 0060 A861     		str	r0, [r5, #24]	@ float
+  19:Core/Src/decode_logic.c **** 
+  20:Core/Src/decode_logic.c ****     //Decode the 7th byte to get the battery failure
+  21:Core/Src/decode_logic.c ****     uint8_t battery_failure = rxData[6];
+ 132              		.loc 1 21 5 is_stmt 1 view .LVU34
+ 133              		.loc 1 21 13 is_stmt 0 view .LVU35
+ 134 0062 A379     		ldrb	r3, [r4, #6]	@ zero_extendqisi2
+ 135              	.LVL6:
+  22:Core/Src/decode_logic.c ****     switch (battery_failure) {
+ 136              		.loc 1 22 5 is_stmt 1 view .LVU36
+ARM GAS  C:\Users\SAURAV~1\AppData\Local\Temp\ccIOdAPg.s 			page 4
+
+
+ 137 0064 032B     		cmp	r3, #3
+ 138 0066 0FD8     		bhi	.L2
+ 139 0068 DFE803F0 		tbb	[pc, r3]
+ 140              	.L4:
+ 141 006c 02       		.byte	(.L7-.L4)/2
+ 142 006d 05       		.byte	(.L6-.L4)/2
+ 143 006e 08       		.byte	(.L5-.L4)/2
+ 144 006f 0B       		.byte	(.L3-.L4)/2
+ 145              		.p2align 1
+ 146              	.L7:
+  23:Core/Src/decode_logic.c ****         case 0x00:
+  24:Core/Src/decode_logic.c ****             decodedMessage->battery_failure = "No Failure";
+ 147              		.loc 1 24 13 view .LVU37
+ 148              		.loc 1 24 45 is_stmt 0 view .LVU38
+ 149 0070 0A4B     		ldr	r3, .L10+12
+ 150              	.LVL7:
+ 151              		.loc 1 24 45 view .LVU39
+ 152 0072 EB61     		str	r3, [r5, #28]
+ 153              	.LVL8:
+  25:Core/Src/decode_logic.c ****             break;
+ 154              		.loc 1 25 13 is_stmt 1 view .LVU40
+ 155              	.L1:
+  26:Core/Src/decode_logic.c ****         case 0x01:
+  27:Core/Src/decode_logic.c ****             decodedMessage->battery_failure = "Level 1(Stop Now)";
+  28:Core/Src/decode_logic.c ****             break;
+  29:Core/Src/decode_logic.c ****         case 0x02:
+  30:Core/Src/decode_logic.c ****             decodedMessage->battery_failure = "Level 2(Power Reduce to 50)";
+  31:Core/Src/decode_logic.c ****             break;
+  32:Core/Src/decode_logic.c ****         case 0x03:
+  33:Core/Src/decode_logic.c ****             decodedMessage->battery_failure = "Level 3(Alarm)";
+  34:Core/Src/decode_logic.c ****             break;
+  35:Core/Src/decode_logic.c ****         default:
+  36:Core/Src/decode_logic.c ****             decodedMessage->battery_failure = "Unknown";
+  37:Core/Src/decode_logic.c ****             break;
+  38:Core/Src/decode_logic.c ****     }
+  39:Core/Src/decode_logic.c **** 
+  40:Core/Src/decode_logic.c **** 
+  41:Core/Src/decode_logic.c **** }...
+ 156              		.loc 1 41 1 is_stmt 0 view .LVU41
+ 157 0074 38BD     		pop	{r3, r4, r5, pc}
+ 158              	.LVL9:
+ 159              	.L6:
+  27:Core/Src/decode_logic.c ****             decodedMessage->battery_failure = "Level 1(Stop Now)";
+ 160              		.loc 1 27 13 is_stmt 1 view .LVU42
+  27:Core/Src/decode_logic.c ****             decodedMessage->battery_failure = "Level 1(Stop Now)";
+ 161              		.loc 1 27 45 is_stmt 0 view .LVU43
+ 162 0076 0A4B     		ldr	r3, .L10+16
+ 163              	.LVL10:
+  27:Core/Src/decode_logic.c ****             decodedMessage->battery_failure = "Level 1(Stop Now)";
+ 164              		.loc 1 27 45 view .LVU44
+ 165 0078 EB61     		str	r3, [r5, #28]
+ 166              	.LVL11:
+  28:Core/Src/decode_logic.c ****             break;
+ 167              		.loc 1 28 13 is_stmt 1 view .LVU45
+ 168 007a FBE7     		b	.L1
+ 169              	.LVL12:
+ 170              	.L5:
+ARM GAS  C:\Users\SAURAV~1\AppData\Local\Temp\ccIOdAPg.s 			page 5
+
+
+  30:Core/Src/decode_logic.c ****             decodedMessage->battery_failure = "Level 2(Power Reduce to 50)";
+ 171              		.loc 1 30 13 view .LVU46
+  30:Core/Src/decode_logic.c ****             decodedMessage->battery_failure = "Level 2(Power Reduce to 50)";
+ 172              		.loc 1 30 45 is_stmt 0 view .LVU47
+ 173 007c 094B     		ldr	r3, .L10+20
+ 174              	.LVL13:
+  30:Core/Src/decode_logic.c ****             decodedMessage->battery_failure = "Level 2(Power Reduce to 50)";
+ 175              		.loc 1 30 45 view .LVU48
+ 176 007e EB61     		str	r3, [r5, #28]
+ 177              	.LVL14:
+  31:Core/Src/decode_logic.c ****             break;
+ 178              		.loc 1 31 13 is_stmt 1 view .LVU49
+ 179 0080 F8E7     		b	.L1
+ 180              	.LVL15:
+ 181              	.L3:
+  33:Core/Src/decode_logic.c ****             decodedMessage->battery_failure = "Level 3(Alarm)";
+ 182              		.loc 1 33 13 view .LVU50
+  33:Core/Src/decode_logic.c ****             decodedMessage->battery_failure = "Level 3(Alarm)";
+ 183              		.loc 1 33 45 is_stmt 0 view .LVU51
+ 184 0082 094B     		ldr	r3, .L10+24
+ 185              	.LVL16:
+  33:Core/Src/decode_logic.c ****             decodedMessage->battery_failure = "Level 3(Alarm)";
+ 186              		.loc 1 33 45 view .LVU52
+ 187 0084 EB61     		str	r3, [r5, #28]
+ 188              	.LVL17:
+  34:Core/Src/decode_logic.c ****             break;
+ 189              		.loc 1 34 13 is_stmt 1 view .LVU53
+ 190 0086 F5E7     		b	.L1
+ 191              	.LVL18:
+ 192              	.L2:
+  36:Core/Src/decode_logic.c ****             decodedMessage->battery_failure = "Unknown";
+ 193              		.loc 1 36 13 view .LVU54
+  36:Core/Src/decode_logic.c ****             decodedMessage->battery_failure = "Unknown";
+ 194              		.loc 1 36 45 is_stmt 0 view .LVU55
+ 195 0088 084B     		ldr	r3, .L10+28
+ 196              	.LVL19:
+  36:Core/Src/decode_logic.c ****             decodedMessage->battery_failure = "Unknown";
+ 197              		.loc 1 36 45 view .LVU56
+ 198 008a EB61     		str	r3, [r5, #28]
+ 199              	.LVL20:
+  37:Core/Src/decode_logic.c ****             break;
+ 200              		.loc 1 37 13 is_stmt 1 view .LVU57
+ 201              		.loc 1 41 1 is_stmt 0 view .LVU58
+ 202 008c F2E7     		b	.L1
+ 203              	.L11:
+ 204 008e 00BF     		.align	3
+ 205              	.L10:
+ 206 0090 9A999999 		.word	-1717986918
+ 207 0094 9999B93F 		.word	1069128089
+ 208 0098 D34D6210 		.word	274877907
+ 209 009c 00000000 		.word	.LC0
+ 210 00a0 0C000000 		.word	.LC1
+ 211 00a4 20000000 		.word	.LC2
+ 212 00a8 3C000000 		.word	.LC3
+ 213 00ac 4C000000 		.word	.LC4
+ 214              		.cfi_endproc
+ 215              	.LFE65:
+ARM GAS  C:\Users\SAURAV~1\AppData\Local\Temp\ccIOdAPg.s 			page 6
+
+
+ 217              		.text
+ 218              	.Letext0:
+ 219              		.file 2 "c:\\users\\saurav raj paudel\\desktop\\projects\\stm32\\tool\\gcc-arm-none-eabi-10.3-2021
+ 220              		.file 3 "c:\\users\\saurav raj paudel\\desktop\\projects\\stm32\\tool\\gcc-arm-none-eabi-10.3-2021
+ 221              		.file 4 "Core/Inc/decode_logic.h"
+ARM GAS  C:\Users\SAURAV~1\AppData\Local\Temp\ccIOdAPg.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 decode_logic.c
+C:\Users\SAURAV~1\AppData\Local\Temp\ccIOdAPg.s:22     .rodata.decodeMessage.str1.4:00000000 $d
+C:\Users\SAURAV~1\AppData\Local\Temp\ccIOdAPg.s:38     .text.decodeMessage:00000000 $t
+C:\Users\SAURAV~1\AppData\Local\Temp\ccIOdAPg.s:44     .text.decodeMessage:00000000 decodeMessage
+C:\Users\SAURAV~1\AppData\Local\Temp\ccIOdAPg.s:141    .text.decodeMessage:0000006c $d
+C:\Users\SAURAV~1\AppData\Local\Temp\ccIOdAPg.s:145    .text.decodeMessage:00000070 $t
+C:\Users\SAURAV~1\AppData\Local\Temp\ccIOdAPg.s:206    .text.decodeMessage:00000090 $d
+
+UNDEFINED SYMBOLS
+__aeabi_i2d
+__aeabi_ddiv
+__aeabi_d2f
+__aeabi_i2f

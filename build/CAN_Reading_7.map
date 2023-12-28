@@ -42,6 +42,14 @@ c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-20
                               c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-sbrkr.o) (_sbrk)
 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libnosys.a(_exit.o)
                               c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-exit.o) (_exit)
+c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+                              build/main.o (__aeabi_i2d)
+c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
+                              build/main.o (__aeabi_ddiv)
+c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_truncdfsf2.o)
+                              build/main.o (__aeabi_d2f)
+c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
+                              build/main.o (__aeabi_i2f)
 
 Discarded input sections
 
@@ -63,6 +71,27 @@ Discarded input sections
  .bss.TxHeader  0x00000000       0x18 build/main.o
  .bss.TxMailbox
                 0x00000000        0x1 build/main.o
+ .bss.discharge_MOS
+                0x00000000        0x1 build/main.o
+ .text          0x00000000        0x0 build/decode_logic.o
+ .data          0x00000000        0x0 build/decode_logic.o
+ .bss           0x00000000        0x0 build/decode_logic.o
+ .rodata.decodeMessage.str1.4
+                0x00000000       0x54 build/decode_logic.o
+ .text.decodeMessage
+                0x00000000       0xb0 build/decode_logic.o
+ .debug_info    0x00000000      0x1ef build/decode_logic.o
+ .debug_abbrev  0x00000000       0xd9 build/decode_logic.o
+ .debug_loc     0x00000000       0xf3 build/decode_logic.o
+ .debug_aranges
+                0x00000000       0x20 build/decode_logic.o
+ .debug_ranges  0x00000000       0x10 build/decode_logic.o
+ .debug_line    0x00000000      0x224 build/decode_logic.o
+ .debug_str     0x00000000      0x270 build/decode_logic.o
+ .comment       0x00000000       0x4a build/decode_logic.o
+ .debug_frame   0x00000000       0x2c build/decode_logic.o
+ .ARM.attributes
+                0x00000000       0x2d build/decode_logic.o
  .text          0x00000000        0x0 build/stm32f1xx_it.o
  .data          0x00000000        0x0 build/stm32f1xx_it.o
  .bss           0x00000000        0x0 build/stm32f1xx_it.o
@@ -908,6 +937,14 @@ Discarded input sections
  .debug_frame   0x00000000       0x20 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libnosys.a(_exit.o)
  .ARM.attributes
                 0x00000000       0x2d c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libnosys.a(_exit.o)
+ .data          0x00000000        0x0 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x00000000        0x0 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+ .data          0x00000000        0x0 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
+ .bss           0x00000000        0x0 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
+ .data          0x00000000        0x0 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_truncdfsf2.o)
+ .bss           0x00000000        0x0 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_truncdfsf2.o)
+ .data          0x00000000        0x0 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
+ .bss           0x00000000        0x0 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
  .text          0x00000000        0x0 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtend.o
  .data          0x00000000        0x0 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtend.o
  .bss           0x00000000        0x0 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtend.o
@@ -932,6 +969,7 @@ LOAD c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10
 LOAD c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
 LOAD c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
 LOAD build/main.o
+LOAD build/decode_logic.o
 LOAD build/stm32f1xx_it.o
 LOAD build/stm32f1xx_hal_msp.o
 LOAD build/stm32f1xx_hal_gpio_ex.o
@@ -976,385 +1014,424 @@ LOAD c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10
                 0x08000000                g_pfnVectors
                 0x0800010c                . = ALIGN (0x4)
 
-.text           0x0800010c     0x22f4
-                0x0800010c                . = ALIGN (0x4)
+.text           0x08000110     0x2e54
+                0x08000110                . = ALIGN (0x4)
  *(.text)
- .text          0x0800010c       0x40 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
- .text          0x0800014c       0x10 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-strlen.o)
-                0x0800014c                strlen
+ .text          0x08000110       0x40 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
+ .text          0x08000150       0x10 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-strlen.o)
+                0x08000150                strlen
+ .text          0x08000160      0x378 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+                0x08000160                __aeabi_drsub
+                0x08000168                __aeabi_dsub
+                0x08000168                __subdf3
+                0x0800016c                __aeabi_dadd
+                0x0800016c                __adddf3
+                0x080003e4                __floatunsidf
+                0x080003e4                __aeabi_ui2d
+                0x08000404                __floatsidf
+                0x08000404                __aeabi_i2d
+                0x08000428                __aeabi_f2d
+                0x08000428                __extendsfdf2
+                0x0800046c                __floatundidf
+                0x0800046c                __aeabi_ul2d
+                0x0800047c                __floatdidf
+                0x0800047c                __aeabi_l2d
+ .text          0x080004d8      0x424 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
+                0x080004d8                __aeabi_dmul
+                0x080004d8                __muldf3
+                0x0800072c                __divdf3
+                0x0800072c                __aeabi_ddiv
+ .text          0x080008fc       0xa0 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_truncdfsf2.o)
+                0x080008fc                __truncdfsf2
+                0x080008fc                __aeabi_d2f
+ .text          0x0800099c      0x21c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
+                0x0800099c                __aeabi_frsub
+                0x080009a4                __subsf3
+                0x080009a4                __aeabi_fsub
+                0x080009a8                __aeabi_fadd
+                0x080009a8                __addsf3
+                0x08000b08                __aeabi_ui2f
+                0x08000b08                __floatunsisf
+                0x08000b10                __aeabi_i2f
+                0x08000b10                __floatsisf
+                0x08000b2c                __aeabi_ul2f
+                0x08000b2c                __floatundisf
+                0x08000b3c                __aeabi_l2f
+                0x08000b3c                __floatdisf
  *(.text*)
  .text.MX_GPIO_Init
-                0x0800015c       0x8c build/main.o
+                0x08000bb8       0x8c build/main.o
+ *fill*         0x08000c44        0x4 
  .text.HAL_CAN_RxFifo0MsgPendingCallback
-                0x080001e8       0xa0 build/main.o
-                0x080001e8                HAL_CAN_RxFifo0MsgPendingCallback
+                0x08000c48      0x1a4 build/main.o
+                0x08000c48                HAL_CAN_RxFifo0MsgPendingCallback
  .text.Error_Handler
-                0x08000288        0x4 build/main.o
-                0x08000288                Error_Handler
+                0x08000dec        0x4 build/main.o
+                0x08000dec                Error_Handler
  .text.MX_CAN_Init
-                0x0800028c       0x6c build/main.o
+                0x08000df0       0x6c build/main.o
  .text.MX_I2C1_Init
-                0x080002f8       0x38 build/main.o
+                0x08000e5c       0x38 build/main.o
  .text.MX_USART1_UART_Init
-                0x08000330       0x34 build/main.o
+                0x08000e94       0x34 build/main.o
  .text.SystemClock_Config
-                0x08000364       0x64 build/main.o
-                0x08000364                SystemClock_Config
- .text.main     0x080003c8       0x30 build/main.o
-                0x080003c8                main
+                0x08000ec8       0x64 build/main.o
+                0x08000ec8                SystemClock_Config
+ .text.main     0x08000f2c       0x30 build/main.o
+                0x08000f2c                main
  .text.NMI_Handler
-                0x080003f8        0x2 build/stm32f1xx_it.o
-                0x080003f8                NMI_Handler
+                0x08000f5c        0x2 build/stm32f1xx_it.o
+                0x08000f5c                NMI_Handler
  .text.HardFault_Handler
-                0x080003fa        0x2 build/stm32f1xx_it.o
-                0x080003fa                HardFault_Handler
+                0x08000f5e        0x2 build/stm32f1xx_it.o
+                0x08000f5e                HardFault_Handler
  .text.MemManage_Handler
-                0x080003fc        0x2 build/stm32f1xx_it.o
-                0x080003fc                MemManage_Handler
+                0x08000f60        0x2 build/stm32f1xx_it.o
+                0x08000f60                MemManage_Handler
  .text.BusFault_Handler
-                0x080003fe        0x2 build/stm32f1xx_it.o
-                0x080003fe                BusFault_Handler
+                0x08000f62        0x2 build/stm32f1xx_it.o
+                0x08000f62                BusFault_Handler
  .text.UsageFault_Handler
-                0x08000400        0x2 build/stm32f1xx_it.o
-                0x08000400                UsageFault_Handler
+                0x08000f64        0x2 build/stm32f1xx_it.o
+                0x08000f64                UsageFault_Handler
  .text.SVC_Handler
-                0x08000402        0x2 build/stm32f1xx_it.o
-                0x08000402                SVC_Handler
+                0x08000f66        0x2 build/stm32f1xx_it.o
+                0x08000f66                SVC_Handler
  .text.DebugMon_Handler
-                0x08000404        0x2 build/stm32f1xx_it.o
-                0x08000404                DebugMon_Handler
+                0x08000f68        0x2 build/stm32f1xx_it.o
+                0x08000f68                DebugMon_Handler
  .text.PendSV_Handler
-                0x08000406        0x2 build/stm32f1xx_it.o
-                0x08000406                PendSV_Handler
+                0x08000f6a        0x2 build/stm32f1xx_it.o
+                0x08000f6a                PendSV_Handler
  .text.SysTick_Handler
-                0x08000408        0x8 build/stm32f1xx_it.o
-                0x08000408                SysTick_Handler
+                0x08000f6c        0x8 build/stm32f1xx_it.o
+                0x08000f6c                SysTick_Handler
  .text.USB_LP_CAN1_RX0_IRQHandler
-                0x08000410       0x10 build/stm32f1xx_it.o
-                0x08000410                USB_LP_CAN1_RX0_IRQHandler
+                0x08000f74       0x10 build/stm32f1xx_it.o
+                0x08000f74                USB_LP_CAN1_RX0_IRQHandler
  .text.HAL_MspInit
-                0x08000420       0x30 build/stm32f1xx_hal_msp.o
-                0x08000420                HAL_MspInit
+                0x08000f84       0x30 build/stm32f1xx_hal_msp.o
+                0x08000f84                HAL_MspInit
  .text.HAL_CAN_MspInit
-                0x08000450       0x88 build/stm32f1xx_hal_msp.o
-                0x08000450                HAL_CAN_MspInit
+                0x08000fb4       0x88 build/stm32f1xx_hal_msp.o
+                0x08000fb4                HAL_CAN_MspInit
  .text.HAL_I2C_MspInit
-                0x080004d8       0x64 build/stm32f1xx_hal_msp.o
-                0x080004d8                HAL_I2C_MspInit
+                0x0800103c       0x64 build/stm32f1xx_hal_msp.o
+                0x0800103c                HAL_I2C_MspInit
  .text.HAL_UART_MspInit
-                0x0800053c       0x78 build/stm32f1xx_hal_msp.o
-                0x0800053c                HAL_UART_MspInit
+                0x080010a0       0x78 build/stm32f1xx_hal_msp.o
+                0x080010a0                HAL_UART_MspInit
  .text.HAL_CAN_Init
-                0x080005b4      0x14c build/stm32f1xx_hal_can.o
-                0x080005b4                HAL_CAN_Init
+                0x08001118      0x14c build/stm32f1xx_hal_can.o
+                0x08001118                HAL_CAN_Init
  .text.HAL_CAN_ConfigFilter
-                0x08000700      0x10c build/stm32f1xx_hal_can.o
-                0x08000700                HAL_CAN_ConfigFilter
+                0x08001264      0x10c build/stm32f1xx_hal_can.o
+                0x08001264                HAL_CAN_ConfigFilter
  .text.HAL_CAN_Start
-                0x0800080c       0x5c build/stm32f1xx_hal_can.o
-                0x0800080c                HAL_CAN_Start
+                0x08001370       0x5c build/stm32f1xx_hal_can.o
+                0x08001370                HAL_CAN_Start
  .text.HAL_CAN_GetRxMessage
-                0x08000868      0x16a build/stm32f1xx_hal_can.o
-                0x08000868                HAL_CAN_GetRxMessage
+                0x080013cc      0x16a build/stm32f1xx_hal_can.o
+                0x080013cc                HAL_CAN_GetRxMessage
  .text.HAL_CAN_ActivateNotification
-                0x080009d2       0x24 build/stm32f1xx_hal_can.o
-                0x080009d2                HAL_CAN_ActivateNotification
+                0x08001536       0x24 build/stm32f1xx_hal_can.o
+                0x08001536                HAL_CAN_ActivateNotification
  .text.HAL_CAN_TxMailbox0CompleteCallback
-                0x080009f6        0x2 build/stm32f1xx_hal_can.o
-                0x080009f6                HAL_CAN_TxMailbox0CompleteCallback
+                0x0800155a        0x2 build/stm32f1xx_hal_can.o
+                0x0800155a                HAL_CAN_TxMailbox0CompleteCallback
  .text.HAL_CAN_TxMailbox1CompleteCallback
-                0x080009f8        0x2 build/stm32f1xx_hal_can.o
-                0x080009f8                HAL_CAN_TxMailbox1CompleteCallback
+                0x0800155c        0x2 build/stm32f1xx_hal_can.o
+                0x0800155c                HAL_CAN_TxMailbox1CompleteCallback
  .text.HAL_CAN_TxMailbox2CompleteCallback
-                0x080009fa        0x2 build/stm32f1xx_hal_can.o
-                0x080009fa                HAL_CAN_TxMailbox2CompleteCallback
+                0x0800155e        0x2 build/stm32f1xx_hal_can.o
+                0x0800155e                HAL_CAN_TxMailbox2CompleteCallback
  .text.HAL_CAN_TxMailbox0AbortCallback
-                0x080009fc        0x2 build/stm32f1xx_hal_can.o
-                0x080009fc                HAL_CAN_TxMailbox0AbortCallback
+                0x08001560        0x2 build/stm32f1xx_hal_can.o
+                0x08001560                HAL_CAN_TxMailbox0AbortCallback
  .text.HAL_CAN_TxMailbox1AbortCallback
-                0x080009fe        0x2 build/stm32f1xx_hal_can.o
-                0x080009fe                HAL_CAN_TxMailbox1AbortCallback
+                0x08001562        0x2 build/stm32f1xx_hal_can.o
+                0x08001562                HAL_CAN_TxMailbox1AbortCallback
  .text.HAL_CAN_TxMailbox2AbortCallback
-                0x08000a00        0x2 build/stm32f1xx_hal_can.o
-                0x08000a00                HAL_CAN_TxMailbox2AbortCallback
+                0x08001564        0x2 build/stm32f1xx_hal_can.o
+                0x08001564                HAL_CAN_TxMailbox2AbortCallback
  .text.HAL_CAN_RxFifo0FullCallback
-                0x08000a02        0x2 build/stm32f1xx_hal_can.o
-                0x08000a02                HAL_CAN_RxFifo0FullCallback
+                0x08001566        0x2 build/stm32f1xx_hal_can.o
+                0x08001566                HAL_CAN_RxFifo0FullCallback
  .text.HAL_CAN_RxFifo1MsgPendingCallback
-                0x08000a04        0x2 build/stm32f1xx_hal_can.o
-                0x08000a04                HAL_CAN_RxFifo1MsgPendingCallback
+                0x08001568        0x2 build/stm32f1xx_hal_can.o
+                0x08001568                HAL_CAN_RxFifo1MsgPendingCallback
  .text.HAL_CAN_RxFifo1FullCallback
-                0x08000a06        0x2 build/stm32f1xx_hal_can.o
-                0x08000a06                HAL_CAN_RxFifo1FullCallback
+                0x0800156a        0x2 build/stm32f1xx_hal_can.o
+                0x0800156a                HAL_CAN_RxFifo1FullCallback
  .text.HAL_CAN_SleepCallback
-                0x08000a08        0x2 build/stm32f1xx_hal_can.o
-                0x08000a08                HAL_CAN_SleepCallback
+                0x0800156c        0x2 build/stm32f1xx_hal_can.o
+                0x0800156c                HAL_CAN_SleepCallback
  .text.HAL_CAN_WakeUpFromRxMsgCallback
-                0x08000a0a        0x2 build/stm32f1xx_hal_can.o
-                0x08000a0a                HAL_CAN_WakeUpFromRxMsgCallback
+                0x0800156e        0x2 build/stm32f1xx_hal_can.o
+                0x0800156e                HAL_CAN_WakeUpFromRxMsgCallback
  .text.HAL_CAN_ErrorCallback
-                0x08000a0c        0x2 build/stm32f1xx_hal_can.o
-                0x08000a0c                HAL_CAN_ErrorCallback
+                0x08001570        0x2 build/stm32f1xx_hal_can.o
+                0x08001570                HAL_CAN_ErrorCallback
  .text.HAL_CAN_IRQHandler
-                0x08000a0e      0x24a build/stm32f1xx_hal_can.o
-                0x08000a0e                HAL_CAN_IRQHandler
+                0x08001572      0x24a build/stm32f1xx_hal_can.o
+                0x08001572                HAL_CAN_IRQHandler
  .text.HAL_InitTick
-                0x08000c58       0x4c build/stm32f1xx_hal.o
-                0x08000c58                HAL_InitTick
+                0x080017bc       0x4c build/stm32f1xx_hal.o
+                0x080017bc                HAL_InitTick
  .text.HAL_Init
-                0x08000ca4       0x24 build/stm32f1xx_hal.o
-                0x08000ca4                HAL_Init
+                0x08001808       0x24 build/stm32f1xx_hal.o
+                0x08001808                HAL_Init
  .text.HAL_IncTick
-                0x08000cc8       0x18 build/stm32f1xx_hal.o
-                0x08000cc8                HAL_IncTick
+                0x0800182c       0x18 build/stm32f1xx_hal.o
+                0x0800182c                HAL_IncTick
  .text.HAL_GetTick
-                0x08000ce0        0xc build/stm32f1xx_hal.o
-                0x08000ce0                HAL_GetTick
+                0x08001844        0xc build/stm32f1xx_hal.o
+                0x08001844                HAL_GetTick
  .text.RCC_Delay
-                0x08000cec       0x2c build/stm32f1xx_hal_rcc.o
+                0x08001850       0x2c build/stm32f1xx_hal_rcc.o
  .text.HAL_RCC_OscConfig
-                0x08000d18      0x410 build/stm32f1xx_hal_rcc.o
-                0x08000d18                HAL_RCC_OscConfig
+                0x0800187c      0x410 build/stm32f1xx_hal_rcc.o
+                0x0800187c                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x08001128       0x54 build/stm32f1xx_hal_rcc.o
-                0x08001128                HAL_RCC_GetSysClockFreq
+                0x08001c8c       0x54 build/stm32f1xx_hal_rcc.o
+                0x08001c8c                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x0800117c      0x16c build/stm32f1xx_hal_rcc.o
-                0x0800117c                HAL_RCC_ClockConfig
+                0x08001ce0      0x16c build/stm32f1xx_hal_rcc.o
+                0x08001ce0                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetHCLKFreq
-                0x080012e8        0xc build/stm32f1xx_hal_rcc.o
-                0x080012e8                HAL_RCC_GetHCLKFreq
+                0x08001e4c        0xc build/stm32f1xx_hal_rcc.o
+                0x08001e4c                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x080012f4       0x20 build/stm32f1xx_hal_rcc.o
-                0x080012f4                HAL_RCC_GetPCLK1Freq
+                0x08001e58       0x20 build/stm32f1xx_hal_rcc.o
+                0x08001e58                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x08001314       0x20 build/stm32f1xx_hal_rcc.o
-                0x08001314                HAL_RCC_GetPCLK2Freq
+                0x08001e78       0x20 build/stm32f1xx_hal_rcc.o
+                0x08001e78                HAL_RCC_GetPCLK2Freq
  .text.HAL_GPIO_Init
-                0x08001334      0x224 build/stm32f1xx_hal_gpio.o
-                0x08001334                HAL_GPIO_Init
+                0x08001e98      0x224 build/stm32f1xx_hal_gpio.o
+                0x08001e98                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x08001558        0xc build/stm32f1xx_hal_gpio.o
-                0x08001558                HAL_GPIO_WritePin
+                0x080020bc        0xc build/stm32f1xx_hal_gpio.o
+                0x080020bc                HAL_GPIO_WritePin
  .text.HAL_NVIC_SetPriorityGrouping
-                0x08001564       0x24 build/stm32f1xx_hal_cortex.o
-                0x08001564                HAL_NVIC_SetPriorityGrouping
+                0x080020c8       0x24 build/stm32f1xx_hal_cortex.o
+                0x080020c8                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x08001588       0x70 build/stm32f1xx_hal_cortex.o
-                0x08001588                HAL_NVIC_SetPriority
+                0x080020ec       0x70 build/stm32f1xx_hal_cortex.o
+                0x080020ec                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x080015f8       0x1c build/stm32f1xx_hal_cortex.o
-                0x080015f8                HAL_NVIC_EnableIRQ
+                0x0800215c       0x1c build/stm32f1xx_hal_cortex.o
+                0x0800215c                HAL_NVIC_EnableIRQ
  .text.HAL_SYSTICK_Config
-                0x08001614       0x28 build/stm32f1xx_hal_cortex.o
-                0x08001614                HAL_SYSTICK_Config
+                0x08002178       0x28 build/stm32f1xx_hal_cortex.o
+                0x08002178                HAL_SYSTICK_Config
  .text.HAL_I2C_Init
-                0x0800163c      0x1bc build/stm32f1xx_hal_i2c.o
-                0x0800163c                HAL_I2C_Init
+                0x080021a0      0x1bc build/stm32f1xx_hal_i2c.o
+                0x080021a0                HAL_I2C_Init
  .text.UART_SetConfig
-                0x080017f8       0x94 build/stm32f1xx_hal_uart.o
+                0x0800235c       0x94 build/stm32f1xx_hal_uart.o
  .text.UART_WaitOnFlagUntilTimeout
-                0x0800188c       0x88 build/stm32f1xx_hal_uart.o
+                0x080023f0       0x88 build/stm32f1xx_hal_uart.o
  .text.HAL_UART_Init
-                0x08001914       0x60 build/stm32f1xx_hal_uart.o
-                0x08001914                HAL_UART_Init
+                0x08002478       0x60 build/stm32f1xx_hal_uart.o
+                0x08002478                HAL_UART_Init
  .text.HAL_UART_Transmit
-                0x08001974       0xbe build/stm32f1xx_hal_uart.o
-                0x08001974                HAL_UART_Transmit
+                0x080024d8       0xbe build/stm32f1xx_hal_uart.o
+                0x080024d8                HAL_UART_Transmit
  .text.SystemInit
-                0x08001a32        0x2 build/system_stm32f1xx.o
-                0x08001a32                SystemInit
+                0x08002596        0x2 build/system_stm32f1xx.o
+                0x08002596                SystemInit
  .text.Reset_Handler
-                0x08001a34       0x48 build/startup_stm32f103xb.o
-                0x08001a34                Reset_Handler
+                0x08002598       0x48 build/startup_stm32f103xb.o
+                0x08002598                Reset_Handler
  .text.Default_Handler
-                0x08001a7c        0x2 build/startup_stm32f103xb.o
-                0x08001a7c                RTC_Alarm_IRQHandler
-                0x08001a7c                EXTI2_IRQHandler
-                0x08001a7c                TIM1_CC_IRQHandler
-                0x08001a7c                PVD_IRQHandler
-                0x08001a7c                EXTI3_IRQHandler
-                0x08001a7c                EXTI0_IRQHandler
-                0x08001a7c                I2C2_EV_IRQHandler
-                0x08001a7c                ADC1_2_IRQHandler
-                0x08001a7c                SPI1_IRQHandler
-                0x08001a7c                TAMPER_IRQHandler
-                0x08001a7c                DMA1_Channel4_IRQHandler
-                0x08001a7c                USART3_IRQHandler
-                0x08001a7c                RTC_IRQHandler
-                0x08001a7c                DMA1_Channel7_IRQHandler
-                0x08001a7c                CAN1_RX1_IRQHandler
-                0x08001a7c                TIM4_IRQHandler
-                0x08001a7c                I2C1_EV_IRQHandler
-                0x08001a7c                DMA1_Channel6_IRQHandler
-                0x08001a7c                TIM3_IRQHandler
-                0x08001a7c                RCC_IRQHandler
-                0x08001a7c                TIM1_TRG_COM_IRQHandler
-                0x08001a7c                DMA1_Channel1_IRQHandler
-                0x08001a7c                Default_Handler
-                0x08001a7c                EXTI15_10_IRQHandler
-                0x08001a7c                EXTI9_5_IRQHandler
-                0x08001a7c                SPI2_IRQHandler
-                0x08001a7c                DMA1_Channel5_IRQHandler
-                0x08001a7c                EXTI4_IRQHandler
-                0x08001a7c                USB_HP_CAN1_TX_IRQHandler
-                0x08001a7c                DMA1_Channel3_IRQHandler
-                0x08001a7c                TIM1_UP_IRQHandler
-                0x08001a7c                WWDG_IRQHandler
-                0x08001a7c                TIM2_IRQHandler
-                0x08001a7c                TIM1_BRK_IRQHandler
-                0x08001a7c                EXTI1_IRQHandler
-                0x08001a7c                USART2_IRQHandler
-                0x08001a7c                I2C2_ER_IRQHandler
-                0x08001a7c                DMA1_Channel2_IRQHandler
-                0x08001a7c                CAN1_SCE_IRQHandler
-                0x08001a7c                FLASH_IRQHandler
-                0x08001a7c                USART1_IRQHandler
-                0x08001a7c                I2C1_ER_IRQHandler
-                0x08001a7c                USBWakeUp_IRQHandler
- *fill*         0x08001a7e        0x2 
+                0x080025e0        0x2 build/startup_stm32f103xb.o
+                0x080025e0                RTC_Alarm_IRQHandler
+                0x080025e0                EXTI2_IRQHandler
+                0x080025e0                TIM1_CC_IRQHandler
+                0x080025e0                PVD_IRQHandler
+                0x080025e0                EXTI3_IRQHandler
+                0x080025e0                EXTI0_IRQHandler
+                0x080025e0                I2C2_EV_IRQHandler
+                0x080025e0                ADC1_2_IRQHandler
+                0x080025e0                SPI1_IRQHandler
+                0x080025e0                TAMPER_IRQHandler
+                0x080025e0                DMA1_Channel4_IRQHandler
+                0x080025e0                USART3_IRQHandler
+                0x080025e0                RTC_IRQHandler
+                0x080025e0                DMA1_Channel7_IRQHandler
+                0x080025e0                CAN1_RX1_IRQHandler
+                0x080025e0                TIM4_IRQHandler
+                0x080025e0                I2C1_EV_IRQHandler
+                0x080025e0                DMA1_Channel6_IRQHandler
+                0x080025e0                TIM3_IRQHandler
+                0x080025e0                RCC_IRQHandler
+                0x080025e0                TIM1_TRG_COM_IRQHandler
+                0x080025e0                DMA1_Channel1_IRQHandler
+                0x080025e0                Default_Handler
+                0x080025e0                EXTI15_10_IRQHandler
+                0x080025e0                EXTI9_5_IRQHandler
+                0x080025e0                SPI2_IRQHandler
+                0x080025e0                DMA1_Channel5_IRQHandler
+                0x080025e0                EXTI4_IRQHandler
+                0x080025e0                USB_HP_CAN1_TX_IRQHandler
+                0x080025e0                DMA1_Channel3_IRQHandler
+                0x080025e0                TIM1_UP_IRQHandler
+                0x080025e0                WWDG_IRQHandler
+                0x080025e0                TIM2_IRQHandler
+                0x080025e0                TIM1_BRK_IRQHandler
+                0x080025e0                EXTI1_IRQHandler
+                0x080025e0                USART2_IRQHandler
+                0x080025e0                I2C2_ER_IRQHandler
+                0x080025e0                DMA1_Channel2_IRQHandler
+                0x080025e0                CAN1_SCE_IRQHandler
+                0x080025e0                FLASH_IRQHandler
+                0x080025e0                USART1_IRQHandler
+                0x080025e0                I2C1_ER_IRQHandler
+                0x080025e0                USBWakeUp_IRQHandler
+ *fill*         0x080025e2        0x2 
  .text.__libc_init_array
-                0x08001a80       0x48 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-init.o)
-                0x08001a80                __libc_init_array
- .text.memset   0x08001ac8       0x10 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memset.o)
-                0x08001ac8                memset
- .text.sprintf  0x08001ad8       0x40 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-sprintf.o)
-                0x08001ad8                siprintf
-                0x08001ad8                sprintf
+                0x080025e4       0x48 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-init.o)
+                0x080025e4                __libc_init_array
+ .text.memset   0x0800262c       0x10 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memset.o)
+                0x0800262c                memset
+ .text.sprintf  0x0800263c       0x40 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-sprintf.o)
+                0x0800263c                siprintf
+                0x0800263c                sprintf
  .text.__ssputs_r
-                0x08001b18       0xb6 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-svfprintf.o)
-                0x08001b18                __ssputs_r
- *fill*         0x08001bce        0x2 
+                0x0800267c       0xb6 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x0800267c                __ssputs_r
+ *fill*         0x08002732        0x2 
  .text._svfprintf_r
-                0x08001bd0      0x200 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-svfprintf.o)
-                0x08001bd0                _svfiprintf_r
-                0x08001bd0                _svfprintf_r
+                0x08002734      0x200 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x08002734                _svfiprintf_r
+                0x08002734                _svfprintf_r
  .text._printf_common
-                0x08001dd0       0xde c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x08001dd0                _printf_common
- *fill*         0x08001eae        0x2 
+                0x08002934       0xde c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x08002934                _printf_common
+ *fill*         0x08002a12        0x2 
  .text._printf_i
-                0x08001eb0      0x24c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x08001eb0                _printf_i
- .text.memchr   0x080020fc       0x1c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memchr-stub.o)
-                0x080020fc                memchr
- .text.memcpy   0x08002118       0x1c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memcpy-stub.o)
-                0x08002118                memcpy
- .text.memmove  0x08002134       0x34 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memmove.o)
-                0x08002134                memmove
- .text._free_r  0x08002168       0x90 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-freer.o)
-                0x08002168                _free_r
+                0x08002a14      0x24c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x08002a14                _printf_i
+ .text.memchr   0x08002c60       0x1c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memchr-stub.o)
+                0x08002c60                memchr
+ .text.memcpy   0x08002c7c       0x1c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memcpy-stub.o)
+                0x08002c7c                memcpy
+ .text.memmove  0x08002c98       0x34 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memmove.o)
+                0x08002c98                memmove
+ .text._free_r  0x08002ccc       0x90 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-freer.o)
+                0x08002ccc                _free_r
  .text.sbrk_aligned
-                0x080021f8       0x40 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x08002d5c       0x40 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
  .text._malloc_r
-                0x08002238       0xe8 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
-                0x08002238                _malloc_r
+                0x08002d9c       0xe8 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x08002d9c                _malloc_r
  .text._realloc_r
-                0x08002320       0x5e c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-reallocr.o)
-                0x08002320                _realloc_r
- *fill*         0x0800237e        0x2 
- .text._sbrk_r  0x08002380       0x20 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-sbrkr.o)
-                0x08002380                _sbrk_r
+                0x08002e84       0x5e c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-reallocr.o)
+                0x08002e84                _realloc_r
+ *fill*         0x08002ee2        0x2 
+ .text._sbrk_r  0x08002ee4       0x20 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-sbrkr.o)
+                0x08002ee4                _sbrk_r
  .text.__malloc_lock
-                0x080023a0        0xc c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-mlock.o)
-                0x080023a0                __malloc_lock
+                0x08002f04        0xc c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-mlock.o)
+                0x08002f04                __malloc_lock
  .text.__malloc_unlock
-                0x080023ac        0xc c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-mlock.o)
-                0x080023ac                __malloc_unlock
+                0x08002f10        0xc c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-mlock.o)
+                0x08002f10                __malloc_unlock
  .text._malloc_usable_size_r
-                0x080023b8       0x10 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-msizer.o)
-                0x080023b8                _malloc_usable_size_r
+                0x08002f1c       0x10 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-msizer.o)
+                0x08002f1c                _malloc_usable_size_r
  .text.__retarget_lock_acquire_recursive
-                0x080023c8        0x2 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-lock.o)
-                0x080023c8                __retarget_lock_acquire_recursive
+                0x08002f2c        0x2 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-lock.o)
+                0x08002f2c                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x080023ca        0x2 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-lock.o)
-                0x080023ca                __retarget_lock_release_recursive
- .text._sbrk    0x080023cc       0x1c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libnosys.a(sbrk.o)
-                0x080023cc                _sbrk
+                0x08002f2e        0x2 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-lock.o)
+                0x08002f2e                __retarget_lock_release_recursive
+ .text._sbrk    0x08002f30       0x1c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libnosys.a(sbrk.o)
+                0x08002f30                _sbrk
  *(.glue_7)
- .glue_7        0x080023e8        0x0 linker stubs
+ .glue_7        0x08002f4c        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x080023e8        0x0 linker stubs
+ .glue_7t       0x08002f4c        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x080023e8        0x0 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
+ .eh_frame      0x08002f4c        0x0 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
  *(.init)
- .init          0x080023e8        0x4 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crti.o
-                0x080023e8                _init
- .init          0x080023ec        0x8 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtn.o
+ .init          0x08002f4c        0x4 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crti.o
+                0x08002f4c                _init
+ .init          0x08002f50        0x8 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtn.o
  *(.fini)
- .fini          0x080023f4        0x4 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crti.o
-                0x080023f4                _fini
- .fini          0x080023f8        0x8 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtn.o
-                0x08002400                . = ALIGN (0x4)
-                0x08002400                _etext = .
+ .fini          0x08002f58        0x4 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crti.o
+                0x08002f58                _fini
+ .fini          0x08002f5c        0x8 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtn.o
+                0x08002f64                . = ALIGN (0x4)
+                0x08002f64                _etext = .
 
-.vfp11_veneer   0x08002400        0x0
- .vfp11_veneer  0x08002400        0x0 linker stubs
+.vfp11_veneer   0x08002f64        0x0
+ .vfp11_veneer  0x08002f64        0x0 linker stubs
 
-.v4_bx          0x08002400        0x0
- .v4_bx         0x08002400        0x0 linker stubs
+.v4_bx          0x08002f64        0x0
+ .v4_bx         0x08002f64        0x0 linker stubs
 
-.iplt           0x08002400        0x0
- .iplt          0x08002400        0x0 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
+.iplt           0x08002f64        0x0
+ .iplt          0x08002f64        0x0 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.rodata         0x08002400       0x9c
-                0x08002400                . = ALIGN (0x4)
+.rodata         0x08002f64      0x158
+                0x08002f64                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.HAL_CAN_RxFifo0MsgPendingCallback.str1.4
-                0x08002400       0x3a build/main.o
- *fill*         0x0800243a        0x2 
+                0x08002f64       0xf7 build/main.o
+ *fill*         0x0800305b        0x1 
  .rodata.aPLLMULFactorTable.1
-                0x0800243c       0x10 build/stm32f1xx_hal_rcc.o
+                0x0800305c       0x10 build/stm32f1xx_hal_rcc.o
  .rodata.aPredivFactorTable.0
-                0x0800244c        0x2 build/stm32f1xx_hal_rcc.o
- *fill*         0x0800244e        0x2 
+                0x0800306c        0x2 build/stm32f1xx_hal_rcc.o
+ *fill*         0x0800306e        0x2 
  .rodata.AHBPrescTable
-                0x08002450       0x10 build/system_stm32f1xx.o
-                0x08002450                AHBPrescTable
+                0x08003070       0x10 build/system_stm32f1xx.o
+                0x08003070                AHBPrescTable
  .rodata.APBPrescTable
-                0x08002460        0x8 build/system_stm32f1xx.o
-                0x08002460                APBPrescTable
+                0x08003080        0x8 build/system_stm32f1xx.o
+                0x08003080                APBPrescTable
  .rodata._svfprintf_r.str1.1
-                0x08002468       0x11 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x08003088       0x11 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-svfprintf.o)
  .rodata._printf_i.str1.1
-                0x08002479       0x22 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x0800249c                . = ALIGN (0x4)
- *fill*         0x0800249b        0x1 
+                0x08003099       0x22 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x080030bc                . = ALIGN (0x4)
+ *fill*         0x080030bb        0x1 
 
-.rel.dyn        0x0800249c        0x0
- .rel.iplt      0x0800249c        0x0 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
+.rel.dyn        0x080030bc        0x0
+ .rel.iplt      0x080030bc        0x0 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x0800249c        0x0
-                0x0800249c                __exidx_start = .
+.ARM            0x080030bc        0x0
+                0x080030bc                __exidx_start = .
  *(.ARM.exidx*)
-                0x0800249c                __exidx_end = .
+                0x080030bc                __exidx_end = .
 
-.preinit_array  0x0800249c        0x0
-                0x0800249c                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x080030bc        0x0
+                0x080030bc                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0800249c                PROVIDE (__preinit_array_end = .)
+                0x080030bc                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x0800249c        0x4
-                0x0800249c                PROVIDE (__init_array_start = .)
+.init_array     0x080030bc        0x4
+                0x080030bc                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0800249c        0x4 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x080024a0                PROVIDE (__init_array_end = .)
+ .init_array    0x080030bc        0x4 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x080030c0                PROVIDE (__init_array_end = .)
 
-.fini_array     0x080024a0        0x4
+.fini_array     0x080030c0        0x4
                 [!provide]                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x080024a0        0x4 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
+ .fini_array    0x080030c0        0x4 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
                 [!provide]                PROVIDE (__fini_array_end = .)
-                0x080024a4                _sidata = LOADADDR (.data)
+                0x080030c4                _sidata = LOADADDR (.data)
 
-.data           0x20000000       0x70 load address 0x080024a4
+.data           0x20000000       0x70 load address 0x080030c4
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -1377,11 +1454,11 @@ LOAD c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10
                 0x20000070                . = ALIGN (0x4)
                 0x20000070                _edata = .
 
-.igot.plt       0x20000070        0x0 load address 0x08002514
+.igot.plt       0x20000070        0x0 load address 0x08003134
  .igot.plt      0x20000070        0x0 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
                 0x20000070                . = ALIGN (0x4)
 
-.bss            0x20000070      0x150 load address 0x08002514
+.bss            0x20000070      0x154 load address 0x08003134
                 0x20000070                _sbss = .
                 0x20000070                __bss_start__ = _sbss
  *(.bss)
@@ -1391,46 +1468,60 @@ LOAD c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10
                 0x2000008c                RxData
  .bss.RxHeader  0x20000094       0x1c build/main.o
                 0x20000094                RxHeader
- .bss.hcan      0x200000b0       0x28 build/main.o
-                0x200000b0                hcan
- .bss.hi2c1     0x200000d8       0x54 build/main.o
-                0x200000d8                hi2c1
- .bss.huart1    0x2000012c       0x48 build/main.o
-                0x2000012c                huart1
- .bss.msg       0x20000174       0x32 build/main.o
-                0x20000174                msg
- *fill*         0x200001a6        0x2 
- .bss.uwTick    0x200001a8        0x4 build/stm32f1xx_hal.o
-                0x200001a8                uwTick
+ .bss.battery_charging
+                0x200000b0        0x1 build/main.o
+                0x200000b0                battery_charging
+ .bss.battery_low
+                0x200000b1        0x1 build/main.o
+                0x200000b1                battery_low
+ .bss.battery_ready
+                0x200000b2        0x1 build/main.o
+                0x200000b2                battery_ready
+ *fill*         0x200000b3        0x1 
+ .bss.hcan      0x200000b4       0x28 build/main.o
+                0x200000b4                hcan
+ .bss.hi2c1     0x200000dc       0x54 build/main.o
+                0x200000dc                hi2c1
+ .bss.huart1    0x20000130       0x48 build/main.o
+                0x20000130                huart1
+ .bss.msg       0x20000178       0x32 build/main.o
+                0x20000178                msg
+ .bss.wire_connected
+                0x200001aa        0x1 build/main.o
+                0x200001aa                wire_connected
+ *fill*         0x200001ab        0x1 
+ .bss.uwTick    0x200001ac        0x4 build/stm32f1xx_hal.o
+                0x200001ac                uwTick
  .bss.__malloc_free_list
-                0x200001ac        0x4 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
-                0x200001ac                __malloc_free_list
- .bss.__malloc_sbrk_start
                 0x200001b0        0x4 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
-                0x200001b0                __malloc_sbrk_start
- .bss.errno     0x200001b4        0x4 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-reent.o)
-                0x200001b4                errno
+                0x200001b0                __malloc_free_list
+ .bss.__malloc_sbrk_start
+                0x200001b4        0x4 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x200001b4                __malloc_sbrk_start
+ .bss.errno     0x200001b8        0x4 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-reent.o)
+                0x200001b8                errno
  .bss.__lock___malloc_recursive_mutex
-                0x200001b8        0x1 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-lock.o)
-                0x200001b8                __lock___malloc_recursive_mutex
- *fill*         0x200001b9        0x3 
+                0x200001bc        0x1 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-lock.o)
+                0x200001bc                __lock___malloc_recursive_mutex
+ *fill*         0x200001bd        0x3 
  .bss.heap_end.0
-                0x200001bc        0x4 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libnosys.a(sbrk.o)
+                0x200001c0        0x4 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libnosys.a(sbrk.o)
  *(COMMON)
-                0x200001c0                . = ALIGN (0x4)
-                0x200001c0                _ebss = .
-                0x200001c0                __bss_end__ = _ebss
+                0x200001c4                . = ALIGN (0x4)
+                0x200001c4                _ebss = .
+                0x200001c4                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x200001c0      0x600 load address 0x08002514
-                0x200001c0                . = ALIGN (0x8)
-                0x200001c0                PROVIDE (end = .)
+                0x200001c4      0x604 load address 0x08003134
+                0x200001c8                . = ALIGN (0x8)
+ *fill*         0x200001c4        0x4 
+                0x200001c8                PROVIDE (end = .)
                 [!provide]                PROVIDE (_end = .)
-                0x200003c0                . = (. + _Min_Heap_Size)
- *fill*         0x200001c0      0x200 
-                0x200007c0                . = (. + _Min_Stack_Size)
- *fill*         0x200003c0      0x400 
-                0x200007c0                . = ALIGN (0x8)
+                0x200003c8                . = (. + _Min_Heap_Size)
+ *fill*         0x200001c8      0x200 
+                0x200007c8                . = (. + _Min_Stack_Size)
+ *fill*         0x200003c8      0x400 
+                0x200007c8                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -1507,53 +1598,61 @@ LOAD c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10
  .ARM.attributes
                 0x0000056e       0x2d c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libnosys.a(sbrk.o)
  .ARM.attributes
-                0x0000059b       0x1d c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtn.o
+                0x0000059b       0x1d c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x000005b8       0x1d c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x000005d5       0x1d c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_truncdfsf2.o)
+ .ARM.attributes
+                0x000005f2       0x1d c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
+ .ARM.attributes
+                0x0000060f       0x1d c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtn.o
 OUTPUT(build/CAN_Reading_7.elf elf32-littlearm)
 LOAD linker stubs
 LOAD c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a
 LOAD c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a
 LOAD c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a
 
-.debug_info     0x00000000     0xefd2
- .debug_info    0x00000000     0x17a6 build/main.o
- .debug_info    0x000017a6      0x5e7 build/stm32f1xx_it.o
- .debug_info    0x00001d8d     0x1382 build/stm32f1xx_hal_msp.o
- .debug_info    0x0000310f     0x13a9 build/stm32f1xx_hal_can.o
- .debug_info    0x000044b8      0x855 build/stm32f1xx_hal.o
- .debug_info    0x00004d0d      0xaf0 build/stm32f1xx_hal_rcc.o
- .debug_info    0x000057fd      0x6d7 build/stm32f1xx_hal_gpio.o
- .debug_info    0x00005ed4      0xe2d build/stm32f1xx_hal_cortex.o
- .debug_info    0x00006d01     0x3ca0 build/stm32f1xx_hal_i2c.o
- .debug_info    0x0000a9a1     0x43a1 build/stm32f1xx_hal_uart.o
- .debug_info    0x0000ed42      0x26e build/system_stm32f1xx.o
- .debug_info    0x0000efb0       0x22 build/startup_stm32f103xb.o
+.debug_info     0x00000000     0xf201
+ .debug_info    0x00000000     0x19d5 build/main.o
+ .debug_info    0x000019d5      0x5e7 build/stm32f1xx_it.o
+ .debug_info    0x00001fbc     0x1382 build/stm32f1xx_hal_msp.o
+ .debug_info    0x0000333e     0x13a9 build/stm32f1xx_hal_can.o
+ .debug_info    0x000046e7      0x855 build/stm32f1xx_hal.o
+ .debug_info    0x00004f3c      0xaf0 build/stm32f1xx_hal_rcc.o
+ .debug_info    0x00005a2c      0x6d7 build/stm32f1xx_hal_gpio.o
+ .debug_info    0x00006103      0xe2d build/stm32f1xx_hal_cortex.o
+ .debug_info    0x00006f30     0x3ca0 build/stm32f1xx_hal_i2c.o
+ .debug_info    0x0000abd0     0x43a1 build/stm32f1xx_hal_uart.o
+ .debug_info    0x0000ef71      0x26e build/system_stm32f1xx.o
+ .debug_info    0x0000f1df       0x22 build/startup_stm32f103xb.o
 
-.debug_abbrev   0x00000000     0x1a76
- .debug_abbrev  0x00000000      0x2f4 build/main.o
- .debug_abbrev  0x000002f4      0x152 build/stm32f1xx_it.o
- .debug_abbrev  0x00000446      0x202 build/stm32f1xx_hal_msp.o
- .debug_abbrev  0x00000648      0x278 build/stm32f1xx_hal_can.o
- .debug_abbrev  0x000008c0      0x1f7 build/stm32f1xx_hal.o
- .debug_abbrev  0x00000ab7      0x2b8 build/stm32f1xx_hal_rcc.o
- .debug_abbrev  0x00000d6f      0x222 build/stm32f1xx_hal_gpio.o
- .debug_abbrev  0x00000f91      0x359 build/stm32f1xx_hal_cortex.o
- .debug_abbrev  0x000012ea      0x306 build/stm32f1xx_hal_i2c.o
- .debug_abbrev  0x000015f0      0x334 build/stm32f1xx_hal_uart.o
- .debug_abbrev  0x00001924      0x140 build/system_stm32f1xx.o
- .debug_abbrev  0x00001a64       0x12 build/startup_stm32f103xb.o
+.debug_abbrev   0x00000000     0x1a96
+ .debug_abbrev  0x00000000      0x314 build/main.o
+ .debug_abbrev  0x00000314      0x152 build/stm32f1xx_it.o
+ .debug_abbrev  0x00000466      0x202 build/stm32f1xx_hal_msp.o
+ .debug_abbrev  0x00000668      0x278 build/stm32f1xx_hal_can.o
+ .debug_abbrev  0x000008e0      0x1f7 build/stm32f1xx_hal.o
+ .debug_abbrev  0x00000ad7      0x2b8 build/stm32f1xx_hal_rcc.o
+ .debug_abbrev  0x00000d8f      0x222 build/stm32f1xx_hal_gpio.o
+ .debug_abbrev  0x00000fb1      0x359 build/stm32f1xx_hal_cortex.o
+ .debug_abbrev  0x0000130a      0x306 build/stm32f1xx_hal_i2c.o
+ .debug_abbrev  0x00001610      0x334 build/stm32f1xx_hal_uart.o
+ .debug_abbrev  0x00001944      0x140 build/system_stm32f1xx.o
+ .debug_abbrev  0x00001a84       0x12 build/startup_stm32f103xb.o
 
-.debug_loc      0x00000000     0xc7d0
- .debug_loc     0x00000000      0x18c build/main.o
- .debug_loc     0x0000018c       0x40 build/stm32f1xx_it.o
- .debug_loc     0x000001cc      0x2c7 build/stm32f1xx_hal_msp.o
- .debug_loc     0x00000493      0xee4 build/stm32f1xx_hal_can.o
- .debug_loc     0x00001377      0x1e1 build/stm32f1xx_hal.o
- .debug_loc     0x00001558      0x790 build/stm32f1xx_hal_rcc.o
- .debug_loc     0x00001ce8      0x551 build/stm32f1xx_hal_gpio.o
- .debug_loc     0x00002239      0x77f build/stm32f1xx_hal_cortex.o
- .debug_loc     0x000029b8     0x4e5a build/stm32f1xx_hal_i2c.o
- .debug_loc     0x00007812     0x4ebf build/stm32f1xx_hal_uart.o
- .debug_loc     0x0000c6d1       0xff build/system_stm32f1xx.o
+.debug_loc      0x00000000     0xc842
+ .debug_loc     0x00000000      0x1fe build/main.o
+ .debug_loc     0x000001fe       0x40 build/stm32f1xx_it.o
+ .debug_loc     0x0000023e      0x2c7 build/stm32f1xx_hal_msp.o
+ .debug_loc     0x00000505      0xee4 build/stm32f1xx_hal_can.o
+ .debug_loc     0x000013e9      0x1e1 build/stm32f1xx_hal.o
+ .debug_loc     0x000015ca      0x790 build/stm32f1xx_hal_rcc.o
+ .debug_loc     0x00001d5a      0x551 build/stm32f1xx_hal_gpio.o
+ .debug_loc     0x000022ab      0x77f build/stm32f1xx_hal_cortex.o
+ .debug_loc     0x00002a2a     0x4e5a build/stm32f1xx_hal_i2c.o
+ .debug_loc     0x00007884     0x4ebf build/stm32f1xx_hal_uart.o
+ .debug_loc     0x0000c743       0xff build/system_stm32f1xx.o
 
 .debug_aranges  0x00000000      0x9a0
  .debug_aranges
@@ -1595,44 +1694,44 @@ LOAD c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10
  .debug_ranges  0x00000960       0x18 build/system_stm32f1xx.o
  .debug_ranges  0x00000978       0x20 build/startup_stm32f103xb.o
 
-.debug_line     0x00000000     0xd93a
- .debug_line    0x00000000      0x5fc build/main.o
- .debug_line    0x000005fc      0x2f6 build/stm32f1xx_it.o
- .debug_line    0x000008f2      0x44a build/stm32f1xx_hal_msp.o
- .debug_line    0x00000d3c     0x1125 build/stm32f1xx_hal_can.o
- .debug_line    0x00001e61      0x558 build/stm32f1xx_hal.o
- .debug_line    0x000023b9      0xc48 build/stm32f1xx_hal_rcc.o
- .debug_line    0x00003001      0x60b build/stm32f1xx_hal_gpio.o
- .debug_line    0x0000360c      0x663 build/stm32f1xx_hal_cortex.o
- .debug_line    0x00003c6f     0x561a build/stm32f1xx_hal_i2c.o
- .debug_line    0x00009289     0x43cd build/stm32f1xx_hal_uart.o
- .debug_line    0x0000d656      0x270 build/system_stm32f1xx.o
- .debug_line    0x0000d8c6       0x74 build/startup_stm32f103xb.o
+.debug_line     0x00000000     0xd9b4
+ .debug_line    0x00000000      0x676 build/main.o
+ .debug_line    0x00000676      0x2f6 build/stm32f1xx_it.o
+ .debug_line    0x0000096c      0x44a build/stm32f1xx_hal_msp.o
+ .debug_line    0x00000db6     0x1125 build/stm32f1xx_hal_can.o
+ .debug_line    0x00001edb      0x558 build/stm32f1xx_hal.o
+ .debug_line    0x00002433      0xc48 build/stm32f1xx_hal_rcc.o
+ .debug_line    0x0000307b      0x60b build/stm32f1xx_hal_gpio.o
+ .debug_line    0x00003686      0x663 build/stm32f1xx_hal_cortex.o
+ .debug_line    0x00003ce9     0x561a build/stm32f1xx_hal_i2c.o
+ .debug_line    0x00009303     0x43cd build/stm32f1xx_hal_uart.o
+ .debug_line    0x0000d6d0      0x270 build/system_stm32f1xx.o
+ .debug_line    0x0000d940       0x74 build/startup_stm32f103xb.o
 
-.debug_str      0x00000000     0x2fe5
- .debug_str     0x00000000      0xe40 build/main.o
-                                0xf49 (size before relaxing)
- .debug_str     0x00000e40       0xe2 build/stm32f1xx_it.o
+.debug_str      0x00000000     0x308f
+ .debug_str     0x00000000      0xeea build/main.o
+                                0xff3 (size before relaxing)
+ .debug_str     0x00000eea       0xe2 build/stm32f1xx_it.o
                                 0x502 (size before relaxing)
- .debug_str     0x00000f22      0x3bd build/stm32f1xx_hal_msp.o
+ .debug_str     0x00000fcc      0x3bd build/stm32f1xx_hal_msp.o
                                 0xebc (size before relaxing)
- .debug_str     0x000012df      0x40a build/stm32f1xx_hal_can.o
+ .debug_str     0x00001389      0x40a build/stm32f1xx_hal_can.o
                                 0xa3d (size before relaxing)
- .debug_str     0x000016e9      0x2f3 build/stm32f1xx_hal.o
+ .debug_str     0x00001793      0x2f3 build/stm32f1xx_hal.o
                                 0x823 (size before relaxing)
- .debug_str     0x000019dc      0x1fe build/stm32f1xx_hal_rcc.o
+ .debug_str     0x00001a86      0x1fe build/stm32f1xx_hal_rcc.o
                                 0x62a (size before relaxing)
- .debug_str     0x00001bda      0x13b build/stm32f1xx_hal_gpio.o
+ .debug_str     0x00001c84      0x13b build/stm32f1xx_hal_gpio.o
                                 0x3ff (size before relaxing)
- .debug_str     0x00001d15      0x373 build/stm32f1xx_hal_cortex.o
+ .debug_str     0x00001dbf      0x373 build/stm32f1xx_hal_cortex.o
                                 0x8d2 (size before relaxing)
- .debug_str     0x00002088      0x8d9 build/stm32f1xx_hal_i2c.o
+ .debug_str     0x00002132      0x8d9 build/stm32f1xx_hal_i2c.o
                                 0xfc4 (size before relaxing)
- .debug_str     0x00002961      0x611 build/stm32f1xx_hal_uart.o
+ .debug_str     0x00002a0b      0x611 build/stm32f1xx_hal_uart.o
                                 0xcf3 (size before relaxing)
- .debug_str     0x00002f72       0x4f build/system_stm32f1xx.o
+ .debug_str     0x0000301c       0x4f build/system_stm32f1xx.o
                                 0x253 (size before relaxing)
- .debug_str     0x00002fc1       0x24 build/startup_stm32f103xb.o
+ .debug_str     0x0000306b       0x24 build/startup_stm32f103xb.o
                                  0x72 (size before relaxing)
 
 .comment        0x00000000       0x49
@@ -1649,35 +1748,39 @@ LOAD c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10
  .comment       0x00000049       0x4a build/stm32f1xx_hal_uart.o
  .comment       0x00000049       0x4a build/system_stm32f1xx.o
 
-.debug_frame    0x00000000     0x1eb0
- .debug_frame   0x00000000       0xec build/main.o
- .debug_frame   0x000000ec       0xc0 build/stm32f1xx_it.o
- .debug_frame   0x000001ac       0xd0 build/stm32f1xx_hal_msp.o
- .debug_frame   0x0000027c      0x2d4 build/stm32f1xx_hal_can.o
- .debug_frame   0x00000550      0x1cc build/stm32f1xx_hal.o
- .debug_frame   0x0000071c      0x184 build/stm32f1xx_hal_rcc.o
- .debug_frame   0x000008a0       0xe4 build/stm32f1xx_hal_gpio.o
- .debug_frame   0x00000984      0x118 build/stm32f1xx_hal_cortex.o
- .debug_frame   0x00000a9c      0x984 build/stm32f1xx_hal_i2c.o
- .debug_frame   0x00001420      0x5d8 build/stm32f1xx_hal_uart.o
- .debug_frame   0x000019f8       0x30 build/system_stm32f1xx.o
- .debug_frame   0x00001a28       0x2c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-init.o)
- .debug_frame   0x00001a54       0x20 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memset.o)
- .debug_frame   0x00001a74       0x6c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-sprintf.o)
- .debug_frame   0x00001ae0       0x90 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-svfprintf.o)
- .debug_frame   0x00001b70       0x60 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_frame   0x00001bd0       0x28 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memchr-stub.o)
- .debug_frame   0x00001bf8       0x28 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x00001c20       0x28 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memmove.o)
- .debug_frame   0x00001c48       0x38 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x00001c80       0x4c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x00001ccc       0x3c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-reallocr.o)
- .debug_frame   0x00001d08       0x2c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-sbrkr.o)
- .debug_frame   0x00001d34       0x30 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-mlock.o)
- .debug_frame   0x00001d64       0x20 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-msizer.o)
- .debug_frame   0x00001d84       0x5c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-reent.o)
- .debug_frame   0x00001de0       0xb0 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-lock.o)
- .debug_frame   0x00001e90       0x20 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libnosys.a(sbrk.o)
+.debug_frame    0x00000000     0x2020
+ .debug_frame   0x00000000       0xf0 build/main.o
+ .debug_frame   0x000000f0       0xc0 build/stm32f1xx_it.o
+ .debug_frame   0x000001b0       0xd0 build/stm32f1xx_hal_msp.o
+ .debug_frame   0x00000280      0x2d4 build/stm32f1xx_hal_can.o
+ .debug_frame   0x00000554      0x1cc build/stm32f1xx_hal.o
+ .debug_frame   0x00000720      0x184 build/stm32f1xx_hal_rcc.o
+ .debug_frame   0x000008a4       0xe4 build/stm32f1xx_hal_gpio.o
+ .debug_frame   0x00000988      0x118 build/stm32f1xx_hal_cortex.o
+ .debug_frame   0x00000aa0      0x984 build/stm32f1xx_hal_i2c.o
+ .debug_frame   0x00001424      0x5d8 build/stm32f1xx_hal_uart.o
+ .debug_frame   0x000019fc       0x30 build/system_stm32f1xx.o
+ .debug_frame   0x00001a2c       0x2c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x00001a58       0x20 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x00001a78       0x6c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-sprintf.o)
+ .debug_frame   0x00001ae4       0x90 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-svfprintf.o)
+ .debug_frame   0x00001b74       0x60 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x00001bd4       0x28 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memchr-stub.o)
+ .debug_frame   0x00001bfc       0x28 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00001c24       0x28 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memmove.o)
+ .debug_frame   0x00001c4c       0x38 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x00001c84       0x4c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x00001cd0       0x3c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x00001d0c       0x2c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x00001d38       0x30 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-mlock.o)
+ .debug_frame   0x00001d68       0x20 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-msizer.o)
+ .debug_frame   0x00001d88       0x5c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-reent.o)
+ .debug_frame   0x00001de4       0xb0 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-lock.o)
+ .debug_frame   0x00001e94       0x20 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libnosys.a(sbrk.o)
+ .debug_frame   0x00001eb4       0xac c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00001f60       0x50 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x00001fb0       0x24 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_truncdfsf2.o)
+ .debug_frame   0x00001fd4       0x4c c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
 
 Cross Reference Table
 
@@ -2054,11 +2157,50 @@ USB_HP_CAN1_TX_IRQHandler                         build/startup_stm32f103xb.o
 USB_LP_CAN1_RX0_IRQHandler                        build/stm32f1xx_it.o
 UsageFault_Handler                                build/stm32f1xx_it.o
 WWDG_IRQHandler                                   build/startup_stm32f103xb.o
+__adddf3                                          c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+__addsf3                                          c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
+__aeabi_d2f                                       c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_truncdfsf2.o)
+                                                  build/decode_logic.o
+                                                  build/main.o
+__aeabi_dadd                                      c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+__aeabi_ddiv                                      c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
+                                                  build/decode_logic.o
+                                                  build/main.o
+__aeabi_dmul                                      c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
+__aeabi_drsub                                     c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+__aeabi_dsub                                      c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+__aeabi_f2d                                       c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+                                                  build/main.o
+__aeabi_fadd                                      c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
+__aeabi_frsub                                     c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
+__aeabi_fsub                                      c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
+__aeabi_i2d                                       c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+                                                  build/decode_logic.o
+                                                  build/main.o
+__aeabi_i2f                                       c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
+                                                  build/decode_logic.o
+                                                  build/main.o
+__aeabi_l2d                                       c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+__aeabi_l2f                                       c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
+__aeabi_ui2d                                      c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+__aeabi_ui2f                                      c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
+__aeabi_ul2d                                      c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+__aeabi_ul2f                                      c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
 __bss_end__                                       c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
 __bss_start__                                     c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
 __call_exitprocs                                  c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-exit.o)
 __deregister_frame_info                           c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
+__divdf3                                          c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
 __dso_handle                                      c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
+__extendsfdf2                                     c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+__floatdidf                                       c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+__floatdisf                                       c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
+__floatsidf                                       c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+__floatsisf                                       c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
+__floatundidf                                     c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+__floatundisf                                     c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
+__floatunsidf                                     c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+__floatunsisf                                     c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
 __init_array_end                                  c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-init.o)
 __init_array_start                                c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-init.o)
 __libc_fini_array                                 c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
@@ -2084,6 +2226,7 @@ __malloc_sbrk_start                               c:/users/saurav raj paudel/des
 __malloc_unlock                                   c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-mlock.o)
                                                   c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
                                                   c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-freer.o)
+__muldf3                                          c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
 __preinit_array_end                               c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-init.o)
 __preinit_array_start                             c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-init.o)
 __register_frame_info                             c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
@@ -2105,6 +2248,9 @@ __sf_fake_stdout                                  c:/users/saurav raj paudel/des
 __ssprint_r                                       c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-svfprintf.o)
 __ssputs_r                                        c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-svfprintf.o)
 __stack                                           c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
+__subdf3                                          c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+__subsf3                                          c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
+__truncdfsf2                                      c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_arm_truncdfsf2.o)
 _ebss                                             build/startup_stm32f103xb.o
 _edata                                            build/startup_stm32f103xb.o
 _estack                                           build/startup_stm32f103xb.o
@@ -2150,8 +2296,12 @@ _svfiprintf_r                                     c:/users/saurav raj paudel/des
 _svfprintf_r                                      c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-svfprintf.o)
                                                   c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-sprintf.o)
 atexit                                            c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
+battery_charging                                  build/main.o
+battery_low                                       build/main.o
+battery_ready                                     build/main.o
 cleanup_glue                                      c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-reent.o)
-decode_and_print                                  build/main.o
+decodeMessage                                     build/decode_logic.o
+discharge_MOS                                     build/main.o
 end                                               c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libnosys.a(sbrk.o)
 errno                                             c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-reent.o)
                                                   c:/users/saurav raj paudel/desktop/projects/stm32/tool/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-sbrkr.o)
@@ -2190,3 +2340,4 @@ uwTick                                            build/stm32f1xx_hal.o
 uwTickFreq                                        build/stm32f1xx_hal.o
 uwTickPrio                                        build/stm32f1xx_hal.o
                                                   build/stm32f1xx_hal_rcc.o
+wire_connected                                    build/main.o
